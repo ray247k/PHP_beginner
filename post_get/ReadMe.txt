@@ -1,2 +1,2 @@
-PHP«áºÝ
-post and get¤èªk½m²ß
+PHP backend practice
+post and get method
