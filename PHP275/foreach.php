@@ -26,7 +26,7 @@
     foreach($money as $data){
         $total += $data; 
     }
-    echo "以上總存款為".$total."萬元<hr>";
+    echo "以上總存款為：".$total."萬元<hr>";
     ?>
 </body>
 
