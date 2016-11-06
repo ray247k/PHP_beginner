@@ -36,10 +36,32 @@
     echo "第一個陣列：";    
     print_r($array);
     echo "<br>第二個陣列：";
-    print_r($money);
-
-    
-    
+    print_r($money);    
+    ?>
+     <div>二維陣列同樣可以用三種方式寫入，除了常見的直接寫入(預設索引值)
+        <br>用不同方式初始化陣列時不能使用相同的陣列名稱，因為前者會無效</div>
+    <?php
+        $grade = array(
+            "math" => array(84,65,42,86,95,32,41),
+            "chi" => array(66,65,85,75,95,80,63),
+            "eng" => array(82,63,45,75,20,68,55)
+        );
+        
+        $money["one"]["Alex"]=50;
+        $money["one"]["Bill"]=35;
+        $money["one"]["Cindy"]=80;
+        $money["one"]["Oscar"]=40;
+        $money["two"]["Alex"]=56;
+        $money["two"]["Bill"]=25;
+        $money["two"]["Cindy"]=65;
+        $money["two"]["Oscar"]=42;
+        $money["tree"]["Alex"]=68;
+        $money["tree"]["Bill"]=25;
+        $money["tree"]["Cindy"]=65;
+        $money["tree"]["Oscar"]=42;
+            
+    echo "第一位同學的國文成績：".$grade["chi"][0]."<br>";
+    echo "第二個月Bill的業績為：".$money["two"]["Bill"];
     ?>
 </body>
 
