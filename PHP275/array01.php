@@ -37,6 +37,9 @@
     print_r($array);
     echo "<br>第二個陣列：";
     print_r($money);
+
+    
+    
     ?>
 </body>
 
