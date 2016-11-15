@@ -17,20 +17,18 @@
     foreach($dic as $letter => $words){
         //拆解$dic陣列，$letter = A~Z，$words是內含單字的陣列
        foreach($words as $eng => $chi){
-            var_dump($words);
-            //var_dump($eng);
-           echo "<br>";
-           //單字內容的「陣列」中索引值是英文單字$eng，資料是中文$chi
-           //以下為檢查方式
-           //echo $eng." = ".$chi."<br>";
+        //單字內容的「陣列」中索引值是英文單字$eng，資料是中文$chi
+        //以下為檢查方式
+        //echo $eng." = ".$chi."<br>";
            if($word == $eng){
                echo $_POST['word']." 的中文翻譯為：".$chi."<br>";
                $nofound = FALSE;
+               exit;
            }elseif($word == $chi){
                echo $_POST['word']." 的英文翻譯為：".$eng."<br>";
                $nofound = FALSE;
+               exit;
            }
-            break;
         }
     }
     if($nofound){
